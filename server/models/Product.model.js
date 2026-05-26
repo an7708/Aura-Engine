@@ -57,7 +57,7 @@ const productSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-productSchema.index({ sku: 1 });
+//roductSchema.index({ sku: 1 });
 productSchema.index({ category: 1 });
 productSchema.index({ productName: 'text' });
 productSchema.index({ stockQuantity: 1 });
