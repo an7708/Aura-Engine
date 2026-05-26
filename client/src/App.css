@@ -14,7 +14,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── Root Variables ── */
   :root {
     --primary: #10B981;
     --primary-dark: #059669;
@@ -48,7 +47,6 @@
     background: var(--bg);
   }
 
-  /* ── Navbar ── */
   .navbar {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -126,16 +124,11 @@
     box-shadow: var(--shadow-sm);
   }
 
-  /* ── Page Container ── */
   .page-container {
     max-width: 1360px;
     margin: 0 auto;
     padding: 28px 32px;
   }
-
-  /* ============================================
-    INVENTORY PAGE
-    ============================================ */
 
   .page-header {
     display: flex;
@@ -159,7 +152,6 @@
     margin-top: 3px;
   }
 
-  /* ── Buttons ── */
   .btn-primary {
     background: var(--primary);
     color: #fff;
@@ -198,7 +190,6 @@
     color: var(--text-primary);
   }
 
-  /* ── Filter Bar ── */
   .filter-bar {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -253,7 +244,6 @@
     color: var(--text-muted);
   }
 
-  /* ── Error Box ── */
   .error-box {
     background: var(--danger-light);
     border: 1px solid #FECACA;
@@ -264,7 +254,6 @@
     margin-bottom: 16px;
   }
 
-  /* ── Table Card ── */
   .table-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -297,7 +286,10 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     white-space: nowrap;
-    user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     position: sticky;
     top: 0;
     background: #FAFBFC;
@@ -367,7 +359,6 @@
     font-size: 14px;
   }
 
-  /* ── Status Badges ── */
   .badge {
     display: inline-block;
     padding: 3px 10px;
@@ -392,7 +383,6 @@
     color: #991B1B;
   }
 
-  /* ── Pagination ── */
   .pagination-bar {
     display: flex;
     align-items: center;
@@ -436,10 +426,6 @@
     cursor: not-allowed;
   }
 
-  /* ============================================
-    ANALYTICS PAGE
-    ============================================ */
-
   .analytics-header {
     margin-bottom: 28px;
   }
@@ -457,7 +443,6 @@
     margin-top: 3px;
   }
 
-  /* ── KPI Cards ── */
   .kpi-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -493,7 +478,6 @@
   .kpi-value.red { color: var(--danger); }
   .kpi-value.amber { color: var(--warning); }
 
-  /* ── Charts Grid ── */
   .charts-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -522,7 +506,6 @@
     margin-bottom: 20px;
   }
 
-  /* ── Category Breakdown Table ── */
   .breakdown-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -575,7 +558,6 @@
     font-weight: 600;
   }
 
-  /* ── Loading / Error States ── */
   .state-box {
     padding: 60px;
     text-align: center;
