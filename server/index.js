@@ -9,7 +9,11 @@ const app = express();
 app.set('trust proxy', 1);
 
 app.use(cors({
-  origin: ['http://localhost:3000', process.env.CLIENT_URL].filter(Boolean),
+  origin: [
+    'https://aura-engine-zeta.vercel.app',
+    'http://localhost:3000'
+  ],
+  credentials: true
 }));
 
 app.use(express.json());
@@ -21,7 +25,7 @@ const limiter = rateLimit({
 });
 app.use('/api', limiter);
 
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected — Aura Engine'))
   .catch((err) => console.error('MongoDB error:', err.message));
 
