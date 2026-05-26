@@ -11,6 +11,8 @@ app.set('trust proxy', 1);
 app.use(cors({
   origin: [
     'https://aura-engine-zeta.vercel.app',
+    'https://aura-engine-git-main-an7708s-projects.vercel.app',
+    'https://aura-engine-2sem2zh2d-an7708s-projects.vercel.app',
     'http://localhost:3000'
   ],
   credentials: true
