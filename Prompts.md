@@ -1,5 +1,5 @@
 # Prompts.md — AI Transparency Log
-## Aura Engine | Anisha Madhukar | Prodesk IT Internship 2025
+## Aura Engine
 
 This document records every significant AI interaction used during the
 architecture and development of Aura Engine. As required by the delivery
@@ -199,4 +199,4 @@ by me, with AI serving as a technical reference, not a code generator.
 
 ---
 
-*Anisha Madhukar — Prodesk IT Internship 2025 — Aura Engine*
+*Anisha Madhukar — Prodesk IT Internship 2026 — Aura Engine*
