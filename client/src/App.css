@@ -13,7 +13,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ── Root Variables ── */
 :root {
   --primary: #C9A84C;
   --primary-dark: #A8863A;
@@ -52,16 +51,11 @@ body {
   --radius-lg: 16px;
 }
 
-/* ============================================
-   LAYOUT
-   ============================================ */
-
 .app-wrapper {
   min-height: 100vh;
   background: var(--bg);
 }
 
-/* ── Navbar ── */
 .navbar {
   background: var(--bg-elevated);
   border-bottom: 1px solid var(--border);
@@ -144,16 +138,13 @@ body {
   box-shadow: 0 2px 8px var(--primary-glow);
 }
 
-/* ── Page Container ── */
+
 .page-container {
   max-width: 1360px;
   margin: 0 auto;
   padding: 32px 36px;
 }
 
-/* ============================================
-   INVENTORY PAGE
-   ============================================ */
 
 .page-header {
   display: flex;
@@ -177,7 +168,7 @@ body {
   margin-top: 4px;
 }
 
-/* ── Buttons ── */
+
 .btn-primary {
   background: var(--primary);
   color: #0F1117;
@@ -218,7 +209,7 @@ body {
   background: var(--surface-hover);
 }
 
-/* ── Filter Bar ── */
+
 .filter-bar {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -279,7 +270,7 @@ body {
   color: var(--text-primary);
 }
 
-/* ── Error Box ── */
+        
 .error-box {
   background: var(--danger-light);
   border: 1px solid rgba(224, 92, 92, 0.25);
@@ -290,7 +281,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* ── Table Card ── */
+
 .table-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -404,7 +395,7 @@ body {
   font-size: 14px;
 }
 
-/* ── Status Badges ── */
+
 .badge {
   display: inline-block;
   padding: 3px 10px;
@@ -433,7 +424,7 @@ body {
   border: 1px solid rgba(224, 92, 92, 0.2);
 }
 
-/* ── Pagination ── */
+
 .pagination-bar {
   display: flex;
   align-items: center;
@@ -481,9 +472,6 @@ body {
   opacity: 0.5;
 }
 
-/* ============================================
-   ANALYTICS PAGE
-   ============================================ */
 
 .analytics-header {
   margin-bottom: 28px;
@@ -502,7 +490,7 @@ body {
   margin-top: 4px;
 }
 
-/* ── KPI Cards ── */
+
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -558,7 +546,7 @@ body {
 .kpi-value.red    { color: var(--danger); }
 .kpi-value.amber  { color: var(--warning); }
 
-/* ── Charts Grid ── */
+
 .charts-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -587,7 +575,7 @@ body {
   margin-bottom: 22px;
 }
 
-/* ── Category Breakdown Table ── */
+
 .breakdown-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -648,7 +636,7 @@ body {
   font-weight: 600;
 }
 
-/* ── States ── */
+
 .state-box {
   padding: 60px;
   text-align: center;
@@ -665,9 +653,6 @@ body {
   margin: 24px 36px;
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
 
 @media (max-width: 1024px) {
   .charts-grid {
