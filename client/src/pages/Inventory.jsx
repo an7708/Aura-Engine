@@ -25,7 +25,6 @@
 
     const search = useDebounce(searchInput, 500);
 
-    //Track previous params to skip fetch if nothing changed
     const prevParamsRef = useRef('');
 
     const fetchInventory = useCallback(async () => {
@@ -38,7 +37,6 @@
 
         const paramString = params.toString();
 
-        //Skip fetch if params are identical to last fetch
         if (paramString === prevParamsRef.current) return;
         prevParamsRef.current = paramString;
 
@@ -57,18 +55,14 @@
 
     useEffect(() => { fetchInventory(); }, [fetchInventory]);
 
-    // Reset page to 1 when filters change — also clear prev params
-    // so the fetch always runs after a filter reset
     useEffect(() => {
         prevParamsRef.current = '';
         setPage(1);
     }, [search, category, minPrice, maxPrice, maxStock]);
 
-    // Safe page navigation — guards against going out of bounds
     const goToPage = useCallback((newPage) => {
         const total = pagination.totalPages || 1;
         const clamped = Math.max(1, Math.min(newPage, total));
-        // Only update if the page actually changes
         setPage((prev) => (prev === clamped ? prev : clamped));
     }, [pagination.totalPages]);
 
